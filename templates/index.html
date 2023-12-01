@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IAMC</title>
+	<link rel="stylesheet" type="text/css" href="{% static '/styles/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/images/banner.png' %}">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<script src="./assets/js/index.js"></script>
+</head>
+<body>
+		<div class="overlay"></div>
+		<div class="main">
+			<div class="background">
+				<img src="{% static 'images/banner.png' %}">
+			</div>
+			<div class="on-top">
+				<div class="contain-img">
+						<div class="container">
+						  <div class="row">
+						    <div class="col-md-12 text-center">
+						      <h3 class="animate-charcter"> CODE LOFI</h3>
+						    </div>
+						  </div>
+						</div>
+				</div>
+				<div class="scroll">
+					<span class="select-language">
+							<select>
+								<option value="en">EN</option>
+								<option value="vi">VI</option>
+							</select>
+					</span>				
+				</div>
+                <form action="{% url 'login' %}" method="get" class="log">
+                         <button type="submit" class="login">LOG IN</button>
+                </form>
+                <form action="{% url 'register' %}" method="get" class="log">
+    					<button type="submit" class="register">Register</button>#}
+                </form>
+{#				<div class="log">#}
+{#					<a class="login" href="{% url 'login' %}">LOG IN</a>#}
+{#					<button class="register">Register</button>#}
+{#				</div>				#}
+			</div>
+			<div class="text">
+				<h1 class="h1">CODE LOFI</h1>
+				<span class="subtitle">Let's indulge in a relaxing video of coding lofi & inspiring beats!</span>
+				<form class="fillin-paper">
+					<div class="contain-input">
+					  <input type="text" id="fname" name="fname" placeholder="Alogorithms, Database, Python, FE, BE, ...">
+					</div>
+					  <button class="search">GET STARTED</button>
+				</form>
+			</div>
+		</div>
+		<div class="its-font">
+				<span class="animation">
+					<h2 class="text-animation">
+						<span>CODE IN A RELAXED MANNER</span>
+					</h2> 
+				</span>  
+		</div> 
+		<div class="middle1">
+			<h1 class="title-middle">
+				WEB DEVELOPER - DJANGO FRAMEWORK
+			</h1>
+			<h5 class="h5-tag">CLICK TO YOUR TARGET TO READ THE LEARNING PATHWAY AND WATCH FULL OF ALL TUTORIAL VIDEOS</h5>	
+			<div class="contain-middle1">
+				<div class="tested">
+					<div class="contain-a"><a href="">FRONT-END</a></div>
+				</div>
+				<div class="tested">
+					<div class="contain-a"><a href="">BACK-END</a></div>
+				</div>
+			</div>
+			<div class="image-web">
+				<img src="{% static 'images/web.png' %}">
+			</div>
+			<div class="line-a">
+				<div class="top-4">
+					<a href="">A</a>
+					<a href="{% url 'video' %}">A</a>
+					<a href="{% url 'video-css' %}">A</a>
+					<a href="">A</a>
+				</div>
+				<div class="bottom-4">
+					<a href="">A</a>
+					<a href="">A</a>
+					<a href="">A</a>
+					<a href="">A</a>
+				</div>
+			</div>
+		</div>
+		<div class="middle2">
+			<h1 class="title-middle">
+				APP 
+			</h1>
+		</div>
+		<div class="middle3">
+			<h1 class="title-middle">
+				TOOL 
+			</h1>
+		</div>
+		<div class="middle4">
+			<h1 class="title-middle">
+				GENERAL COURSES
+				
+			</h1>		
+		</div>
+		<div class="middle5">
+			<h1 class="title-middle">
+				Frequently Asked Questions 
+			</h1>			
+		</div>
+		<a class="pro" href="">Try CodeLofi Pro with only 3$</a>
+		<footer class="middlefooter">
+			<h2 class="title-middle">
+				HOW ABOUT US ?
+			</h2>
+			<div class="below-how-about-us">
+				<div class="background-for-detail">
+				     <span class="how-about-us-story">I am Ngan (Heiley Pham), passionate about coding, and I want to create a detailed tutorial video for you covering various programming topics. Whether it's building a complete frontend and backend web, or delving into areas like databases, algorithms, languages, and frameworks, I'll guide you through it all with coding sessions set to relaxing lofi music. Join me in watching the videos and coding together! Thank you, everyone!</span>
+				</div>
+				<div>
+					<div class="me">
+					   <span style="--i:1">C</span>
+					   <span style="--i:2">o</span>
+					   <span style="--i:3">n</span>
+					   <span style="--i:4">t</span>
+					   <span style="--i:5">a</span>
+					   <span style="--i:6">c</span>
+					   <span style="--i:7">t</span>
+			    	</div>
+			    	<div class="contact-icon">
+				    	<i class="fa-solid fa-envelope"><a class="gmail" href="">AAA</a></i>
+				    	<i class="fa-brands fa-github"><a class="github" href="https://github.com/ThuNganPythonista?tab=repositories"> Github</a></i>
+				    	<i class="fa-brands fa-discord"><a class="discord" href="https://discord.gg/gQHmGkZB"> Discord</a></i>
+			    	</div>
+				</div>
+			</div>
+		</footer>
+</body>
+</html>

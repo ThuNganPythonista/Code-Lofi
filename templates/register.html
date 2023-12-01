@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}REGISTER{% endblock title %}
+
+{% block content %}
+	<div class="login-form" style="margin-top:3em;">
+		 <div class="background-login">
+			<img src="{% static 'images/logo-banner.png' %}">
+		</div>
+
+		<form class="login">
+			<h5>REGISTER</h5>
+			<input type="text" name="username" id="username" placeholder="Username">
+			<input type="text" name="email" id="email" placeholder="Email">
+			<input type="password" name="password" id="password" placeholder="Password">
+			<input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password">
+
+			<div class="button-login">
+				<button>Register</button>
+			</div>
+			<a>Already have an account?</a>
+		</form>
+	</div>
+
+{% endblock content %}

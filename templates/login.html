@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}LOG IN{% endblock title %}
+
+{% block content %}
+	<div class="login-form" style="margin-top:3em;">
+		<div class="background-login">
+			<img src="{% static 'images/logo-banner.png' %}">
+		</div>
+		<form class="login">
+			<h5>LOG IN</h5>
+			<input type="text" name="email" id="email" placeholder="Email">
+			<input type="password" name="password" id="password" placeholder="Password">
+			<div class="button-login">
+				<button>LOG IN</button>
+			</div>
+			<a>Forgotten password?</a>
+			<div class="design-login">
+				<div class="line"></div>
+				<p> or continue with </p>
+				<div class="line"></div>
+			</div>
+			<a class="google-login">
+				<i class="fa-brands fa-google" style="color: #c7d2e5;"></i>
+				LOG IN WITH GOOGLE
+			</a>
+			<a class="facebook-login">
+					<i class="fa-brands fa-facebook-f" style="color: #c7d2e5;"></i>
+				LOG IN WITH FACEBOOK
+			</a>
+		</form>
+	</div>
+{% endblock content %}

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}REGISTER{% endblock title %}
+{% block content %}
+<body id="video-detail">
+	<div class="car-detail-main">
+		<div class="header">
+			<div class="color">
+				<div class="red"></div>
+				<div class="green"></div>
+				<div class="yellow"></div>
+			</div>
+			<div class="textcode">CodeLofi.txt</div>
+		</div>
+		<div class="line-rey"></div>
+		<div class="contain-video">			
+			<!-- <video width="60%" height="100%" controls>
+   					<source src="./assets/images/1115.mov" type="video/quicktime">
+			</video> -->
+            <iframe width="670" height="419" src="https://www.youtube.com/embed/xy4S141QHWk" title="Code LOFI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			<div class="react-video">
+				<div class="icon">
+					<i class="fa-brands fa-github" style="color: black;"></i>
+					<a class="see">Source Code</a>
+				</div>
+				<div class="icon">
+					<i class="fa-solid fa-question" style="color: black;"></i>
+					<a class="see">Ask us</a>
+				</div>
+				<div class="icon">
+					<i class="fa-solid fa-share-from-square" style="color: black;"></i>
+					<a class="see">Share</a>
+				</div>
+			</div>
+			<div class="materials">
+				<h3 class="h3-materials">We have instructions in README.md file on our Github</h3>
+			</div>
+		</div>
+		<div>
+			#CodeLofi
+		</div>
+	</div>
+	<div class="register-pro">Register CodeLofi Premium</div>
+
+
+
+{% endblock content %}

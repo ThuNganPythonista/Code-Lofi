@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IAMC</title>
+	<link rel="stylesheet" type="text/css" href="{% static '/styles/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/images/banner.png' %}">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<script src="./assets/js/index.js"></script>
+</head>
+<body>
+		<div class="overlay"></div>
+		<div class="main">
+			<div class="on-top">
+				< class="contain-img" href="{% url 'home' %}">
+						<div class="container">
+						  <div class="row">
+						    <div class="col-md-12 text-center">
+						      <a class="animate-charcter" href="{% url 'home' %}"> CODE LOFI</a>
+						    </div>
+						  </div>
+						</div>
+				</a>
+				<div class="scroll">
+					<span class="select-language">
+							<select>
+								<option value="en">EN</option>
+								<option value="vi">VI</option>
+							</select>
+					</span>
+				</div>
+				<div class="log">
+					<a class="login" href="{% url 'login' %}">LOG IN</a>
+					<a class="register">Register</a>
+				</div>
+			</div>
+		</div>
+		{% block content %}
+        {% endblock content %}
+		<div class="middle5">
+			<h1 class="title-middle">
+				Frequently Asked Questions
+			</h1>
+		</div>
+		<a class="pro" href="">Try CodeLofi Pro with only 3$</a>
+		<footer class="middlefooter">
+			<h2 class="title-middle">
+				HOW ABOUT US ?
+			</h2>
+			<div class="below-how-about-us">
+				<div class="background-for-detail">
+				     <span class="how-about-us-story">I am Ngan (Heiley Pham), passionate about coding, and I want to create a detailed tutorial video for you covering various programming topics. Whether it's building a complete frontend and backend web, or delving into areas like databases, algorithms, languages, and frameworks, I'll guide you through it all with coding sessions set to relaxing lofi music. Join me in watching the videos and coding together! Thank you, everyone!</span>
+				</div>
+				<div>
+					<div class="me">
+					   <span style="--i:1">C</span>
+					   <span style="--i:2">o</span>
+					   <span style="--i:3">n</span>
+					   <span style="--i:4">t</span>
+					   <span style="--i:5">a</span>
+					   <span style="--i:6">c</span>
+					   <span style="--i:7">t</span>
+			    	</div>
+			    	<div class="contact-icon">
+				    	<i class="fa-solid fa-envelope"><a class="gmail" href="">AAA</a></i>
+				    	<i class="fa-brands fa-github"><a class="github" href="https://github.com/ThuNganPythonista?tab=repositories"> Github</a></i>
+				    	<i class="fa-brands fa-discord"><a class="discord" href="https://discord.gg/gQHmGkZB"> Discord</a></i>
+			    	</div>
+				</div>
+			</div>
+		</footer>
+</body>
+</html>
