@@ -5,17 +5,16 @@
 {% block title %}LOG IN{% endblock title %}
 
 {% block content %}
-	<div class="login-form" style="margin-top:3em;">
+{#	<div class="login-form" style="margin-top:3em;">#}
 		<div class="background-login">
 			<img src="{% static 'images/logo-banner.png' %}">
 		</div>
-		<form class="login">
+		<form class="login" action="" method="post">
+            {% csrf_token %}
 			<h5>LOG IN</h5>
-			<input type="text" name="email" id="email" placeholder="Email">
+			<input type="text" name="username" id="username" placeholder="Username">
 			<input type="password" name="password" id="password" placeholder="Password">
-			<div class="button-login">
-				<button>LOG IN</button>
-			</div>
+			<input class="button-login" type="submit" value="log-in">
 			<a>Forgotten password?</a>
 			<div class="design-login">
 				<div class="line"></div>
@@ -31,5 +30,5 @@
 				LOG IN WITH FACEBOOK
 			</a>
 		</form>
-	</div>
+{#	</div>#}
 {% endblock content %}
