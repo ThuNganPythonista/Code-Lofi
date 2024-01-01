@@ -36,6 +36,9 @@ class VideoPage2(View):
     def get(self, request):
         return render(request=request, template_name="video-detail01.html")
 
+class VideoPagePython(View):
+    def get(self, request):
+        return render(request=request, template_name="video-detail04.html")
 
 @decorators.login_required(login_url='/login/')
 def view_something(request):
