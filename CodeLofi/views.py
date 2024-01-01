@@ -3,9 +3,6 @@ from django.views import View
 from django.contrib.auth import authenticate, login, decorators
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-
-
-
 class HomeView(View):
     def get(self, request):
         return render(request=request, template_name="index.html")

@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "djangLofi/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "djangLofi/wsgi.py"
+    }
+  ]
+}
