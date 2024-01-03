@@ -75,13 +75,13 @@ WSGI_APPLICATION = 'djangLofi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'LofiDjango',
+        'NAME': 'railway',
         'USER': 'root',
 
-        'PASSWORD': 'root',
+        'PASSWORD': '1cABfBd4A34h4B1-d4HhG5gHBABD-b63',
 
-        'HOST': 'localhost',
-        'PORT': '3306'
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT': '35942'
     }
 }
 
