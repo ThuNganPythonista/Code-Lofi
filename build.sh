@@ -1,4 +1,4 @@
-sudo apt-get install default-libmysqlclient-dev build-essential
+sudo apt-get install pkg-config
 
 
 pip install -r requirements.txt
