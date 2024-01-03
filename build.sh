@@ -1,4 +1,4 @@
-sudo apt-get install pkg-config
+apt install pkg-config
 
 
 pip install -r requirements.txt
