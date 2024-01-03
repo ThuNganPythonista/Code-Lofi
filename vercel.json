@@ -4,6 +4,14 @@
       "src": "djangLofi/wsgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+
+    },
+    {
+      "src": "build.sh",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "staticfiles_build"
+      }
     }
   ],
   "routes": [
@@ -11,6 +19,5 @@
       "src": "/(.*)",
       "dest": "djangLofi/wsgi.py"
     }
-  ],
-    "installCommand": "python -m pip install --upgrade pip && pip install -r requirements.txt"
+  ]
 }
