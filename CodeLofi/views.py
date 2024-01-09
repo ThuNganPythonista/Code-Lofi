@@ -36,6 +36,9 @@ class VideoPage2(View):
     def get(self, request):
         return render(request=request, template_name="video-detail01.html")
 
+class VideoPage5(View):
+    def get(self, request):
+        return render(request=request, template_name="video-detail05.html")
 class VideoPagePython(View):
     def get(self, request):
         return render(request=request, template_name="video-detail04.html")
