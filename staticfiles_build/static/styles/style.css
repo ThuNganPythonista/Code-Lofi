@@ -13,9 +13,11 @@
   display: inline-block;
 }
 .log button{
-  border-radius:10px;
-  background-color: #ffd400;
-  cursor: pointer;
+    height: 34px;
+    width: 71px;
+    font-size: x-small;
+    border: none;
+    color: black;
 }
 .on-top {
   background-color: #13072E;
@@ -174,8 +176,11 @@
 .middlefooter{
   height: 31em;
   background-color: #ffd400;  
-  color: black;
+  color: #13072e;
   text-align: center;
+}
+.middle2{
+    height:50em !important;
 }
 .title-middle {
     padding: 23px;
@@ -216,6 +221,7 @@
     width: 100%;
     height: 12%;
     justify-content: space-around;
+    margin-bottom: 3em
 }
 .h5-tag {
   margin-bottom:21px;
@@ -656,6 +662,47 @@
 .discord {
     color: purple;
 }
+.contain-a-puple{
+    background-color: #13072e;
+    color: #ffd400;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.contain-a-puple a {
+    color: #ffd400;
+}
+.h5-tag02{
+    color: #13072e;
+    font-size: large;
+    width: 100%;
+    margin-bottom: 2em;
+    text-align: center;
+}
+.robot {
+   height: 28em;
+}
+.next-page-container h5{
+    font-size: xxx-large;
+}
+.next-page-container p{
 
-
-
+    font-size:larger;
+}
+.middle4 {
+    height:53em !important;
+}
+.next-page-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.next-page-container{
+    height: 100%;
+    width: 80%;
+}

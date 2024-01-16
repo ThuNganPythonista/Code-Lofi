@@ -13,9 +13,11 @@
   display: inline-block;
 }
 .log button{
-  border-radius:10px;
-  background-color: #ffd400;
-  cursor: pointer;
+    height: 34px;
+    width: 71px;
+    font-size: x-small;
+    border: none;
+    color: black;
 }
 .on-top {
   background-color: #13072E;
@@ -71,10 +73,11 @@
   margin-top: 20%;
 }
 .contain-img {
-  width: 61%;
-  align-items: center;
-  text-align: center;
-  display: flex;
+    margin-left: 3em;
+    width: 71%;
+    align-items: center;
+    text-align: center;
+    display: flex;
 }
 .contain-img img{
   background-size: cover;
@@ -86,15 +89,13 @@
 .select-language select{
     text-align: center;
     border-radius: 12px;
-    width: 74%;
+    width: 69%;
     height: 1.7em;
     background-color: #4e4c4cd1;
     color: white;
-    margin-top: 1em;
     margin: 1.5em;
 }
 .log {
-  width: 21%;
   justify-content: inherit;
   align-items: center;
   display:flex;
@@ -472,7 +473,6 @@
     width: 40%;
     padding: 1em;
     border-radius: 100px;
-    : ;
     background-color: #ffd400;
     color: #13072E;
     border: 1px solid;
@@ -658,6 +658,26 @@
 .discord {
     color: purple;
 }
-
-
-
+.contain-a-puple{
+    background-color: #13072e;
+    color: #ffd400;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.contain-a-puple a {
+    color: #ffd400;
+}
+.h5-tag02{
+    color: #13072e;
+    font-size: large;
+    width: 100%;
+    margin-bottom: 2em;
+    text-align: center;
+}
+.body {
+    background-color:red
+}
