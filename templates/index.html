@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="{% static '/styles/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static '/images/banner.png' %}">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-	<script src="./assets/js/index.js"></script>
+	<script src="{% static '/js/index.js' %}"></script>
 </head>
 <body>
 		<div class="overlay"></div>
@@ -114,24 +114,33 @@
             <div class="">
 				<img src="{% static 'images/contain2.png' %}" class="robot">
 			</div>
+           <button onclick="myFunction()" href="https://app.luminpdf.com/viewer/65aa14a87993d6dc3f918e32" class="html-download">
+           </button>
         </div>
 
 		<div class="middle4">
-			<h1 class="title-middle">
-How To Be Immortal With Dinosaur Game On Chrome
-			</h1>
-            <div class="next-page-container">
-                <h5 class="step1">Step 1</h5>
-                <p>Disconnect your wifi on Chrome so that the dinosaur game screen appears</p>
-                <img src="{% static 'images/khunglong01.jpg' %}">
-                <a href="">Next Page  <i class="fa-solid fa-forward-fast"></i></a>
+            <img src="{% static 'images/crazycode.png' %}" class="dinosaur-img1">
+            <div class="middle4-round1">
+                 <a href="https://github.com/koodo-reader/koodo-reader"><img src="{% static 'images/osc1.jpg' %}"></a>
+                 <a href="https://github.com/wallabag/wallabag?tab=readme-ov-file"><img src="{% static 'images/osc2.jpg' %}"></a>
+                 <a href="https://github.com/zhiyiYo/PyQt-Fluent-Widgets"><img src="{% static 'images/osc3.jpg' %}"></a>
+            </div>
+            <div class="middle4-round2">
+                 <a href="https://github.com/Sangwan5688/BlackHole"><img src="{% static 'images/osc4.jpg' %}"></a>
+                 <a href="https://github.com/Mereithhh/vanblog"><img src="{% static 'images/osc5.jpg' %}"></a>
+                 <a href="https://github.com/giscus/giscus"><img src="{% static 'images/osc6.jpg' %}"></a>
 
             </div>
 		</div>
 		<div class="middle5">
 			<h1 class="title-middle">
-				Frequently Asked Questions
+				Heated Issues In The Field Of Computer Science
 			</h1>
+            <div class="contain-heatd">
+                <a  href="{% url 'news' %}"><i class="fa-solid fa-plus" style="color: #FFD43B;"></i><p>The rate of layoff Developers from Startup Companies to Big Tech like Google (Some Advices)</p></a>
+                <a><i class="fa-solid fa-plus" style="color: #FFD43B;"></i><p>Can AI Replace Developers?</p></a>
+                <a><i class="fa-solid fa-plus" style="color: #FFD43B;"></i><p>How to Write a Resume When Having No Experience Working?</p></a>
+            </div>
 		</div>
 		<a class="pro" href="">Try CodeLofi Pro with only 3$</a>
 		<footer class="middlefooter">
@@ -160,5 +169,19 @@ How To Be Immortal With Dinosaur Game On Chrome
 				</div>
 			</div>
 		</footer>
+{#<script>#}
+{#function myFunction() {#}
+{#  alert("If you haven't purchased the CodeLofi Pro version, you need to ask for permission to download."#}
+{#  );}#}
+{#</script>#}
+<script>
+function myFunction() {
+  var result = confirm("If you haven't purchased the CodeLofi Pro version, you need to ask for permission to download.");
+
+  if (result) {
+    window.location.href = "https://app.luminpdf.com/viewer/65aa14a87993d6dc3f918e32";
+  }
+}
+</script>
 </body>
 </html>

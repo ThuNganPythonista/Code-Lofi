@@ -3,6 +3,8 @@ from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
 from .views import *
+from . import views
+
 
 urlpatterns = [
     path('', HomeView.as_view(),name="home"),
@@ -12,5 +14,6 @@ urlpatterns = [
     path('video-python/', VideoPagePython.as_view(), name="video-python"),
     path('video-django/', VideoPage5.as_view(), name="video-django"),
     path('video-css/', VideoPage2.as_view(), name="video-css"),
-    path('view-product/',view_something, name="view-something")
+    path('news/', Post1.as_view(), name="news"),
+    path('view-product/',view_something, name="view-something"),
 ]

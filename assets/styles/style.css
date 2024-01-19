@@ -706,3 +706,79 @@
     width: 80%;
     margin-left: 10%;
 }
+.next-page-container01,
+.next-page-container02{
+    display:none;
+    width: 80%;
+    margin-left: 10%;
+}
+.html-download {
+    z-index: 99;
+    margin-top: -22em;
+    width: 26em;
+    height: 9em;
+    margin-right: 25em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.dinosaur-img1{
+    height: 35em;
+    width: 65em;
+}
+.dinosaur-img2 {
+    z-index: 1;
+    height: 40%;
+    width: 50%;
+    margin-top: -6em;
+}
+.contain-heatd{
+    height: 22em;
+}
+.contain-heatd a{
+    padding: 2em;
+    font-size: larger;
+    gap: 1em;
+    color: white;
+    display: flex;
+}
+.middle4-round1,
+.middle4-round2{
+    display: flex;
+    z-index: 9;
+    height: 10em;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 4em;
+    margin-top: -17em;
+}
+.middle4-round1 img,
+.middle4-round2 img{
+    width: 24em;
+    height: 14em;
+}
+.middle4-round2{
+    margin-top: 2em;
+}
+.middle4-round1 a,
+.middle4-round2 a{
+    overflow-y: hidden;
+}
+.contain-post {
+    flex-direction: column;
+    display: flex;
+    gap: 2em;
+    width: 72%;
+    margin-left: 10%;
+    color: #13072E;
+    font-size: larger;
+    margin-bottom: 5%;
+}
+.contain-post h5{
+    font-size: xx-large;
+}
+.weeb{
+    width: 50%;
+    margin-top: 8%;
+    margin-left:8%;
+}
