@@ -782,3 +782,14 @@
     margin-top: 8%;
     margin-left:8%;
 }
+.contain-post p{
+    background-color: #13072E;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.layoff {
+    width: 20em;
+    height: 21em;
+    margin-left: 29%;
+}
