@@ -15,5 +15,6 @@ urlpatterns = [
     path('video-django/', VideoPage5.as_view(), name="video-django"),
     path('video-css/', VideoPage2.as_view(), name="video-css"),
     path('news/', Post1.as_view(), name="news"),
+    path('news-ai/', Post2.as_view(), name="news-ai"),
     path('view-product/',view_something, name="view-something"),
 ]
