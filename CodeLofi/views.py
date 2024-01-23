@@ -52,6 +52,9 @@ class Post2(View):
     def get(self, request):
         return render(request=request, template_name="post2.html")
 
+class Post3(View):
+    def get(self, request):
+        return render(request=request, template_name="post3.html")
 class Video6(View):
     def get(self, request):
         return render(request=request, template_name="video-mysql.html")
