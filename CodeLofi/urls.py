@@ -17,4 +17,6 @@ urlpatterns = [
     path('news/', Post1.as_view(), name="news"),
     path('news-ai/', Post2.as_view(), name="news-ai"),
     path('view-product/',view_something, name="view-something"),
+    path('video-mysql-connect/', Video6.as_view(), name="video6-mysql"),
+
 ]

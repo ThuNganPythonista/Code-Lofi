@@ -51,6 +51,10 @@ class Post1(View):
 class Post2(View):
     def get(self, request):
         return render(request=request, template_name="post2.html")
+
+class Video6(View):
+    def get(self, request):
+        return render(request=request, template_name="video-mysql.html")
 @decorators.login_required(login_url='/login/')
 def view_something(request):
     return HttpResponse("Typically, individuals learning programming exhibit different preferences. "
