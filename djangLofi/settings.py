@@ -26,9 +26,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-# Application definition
+AUTHENTICATION_BACKENDS = [
+
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+
+]
+
 
 INSTALLED_APPS = [
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -37,16 +46,18 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'CodeLofi',
 ]
+SITE_ID=1
+MIDDLEWARE = (
+    "django.middleware.common.CommonMiddleware",
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
 
-MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-]
+    # Add the account middleware:
+    "allauth.account.middleware.AccountMiddleware",
+)
+
 
 ROOT_URLCONF = 'djangLofi.urls'
 
@@ -130,3 +141,5 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "assets")]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = "CodeLofi.MyUser"
+
+

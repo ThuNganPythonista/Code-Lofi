@@ -85,9 +85,6 @@
   background-size: cover;
   width: 15%;
 }
-.log {
-  display:flex;
-}
 .select-language select{
     text-align: center;
     border-radius: 12px;
@@ -101,6 +98,7 @@
   justify-content: inherit;
   align-items: center;
   display:flex;
+  gap:1em;
 
 }
 .log button{
@@ -301,7 +299,6 @@
     justify-content: center;
     width: 100%;
     flex-direction: column;
-    height: 39.5em;
     display: flex;
     align-items: center;
     gap: 2em;
@@ -551,6 +548,9 @@
 #video-detail{
   background-color: #ffd400;
 }
+#post-detail{
+  background-color: #13072E;
+}
 .header{
     height: 3em;
     display: flex;
@@ -685,7 +685,7 @@
     text-align: center;
 }
 .robot {
-   height: 28em;
+   height: 33em;
 }
 .next-page-container h5{
     font-size: xxx-large;
@@ -716,10 +716,20 @@
 }
 .html-download {
     z-index: 99;
-    margin-top: -22em;
-    width: 26em;
-    height: 9em;
-    margin-right: 25em;
+    margin-top: -24.5em;
+    width: 21em;
+    height: 7.5em;
+    margin-right: 29em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.html-downloadbl {
+    z-index: 99;
+    margin-top: 2em;
+    width: 21em;
+    height: 7.5em;
+    margin-right: 29em;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -778,7 +788,7 @@
 .contain-post h5{
     font-size: xx-large;
     margin:4%;
-    color: darkblue;
+    color: #ffd400;
 }
 .weeb{
     width: 50%;
@@ -798,4 +808,8 @@
     width: 20em;
     height: 21em;
     margin-left: 29%;
+}
+.message-waiting {
+    margin-top: 6em;
+    font-size: xx-large;
 }

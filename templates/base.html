@@ -33,8 +33,12 @@
 					</span>
 				</div>
 				<div class="log">
-					<a class="login" href="{% url 'login' %}">LOG IN</a>
-					<a class="register">Register</a>
+					<a href="/accounts/login" class="log">
+                         <button type="submit" class="login">LOG IN</button>
+                    </a>
+					 <a href="/accounts/signup" class="log">
+    					<button type="submit" class="register">Register</button>
+                     </a>
 				</div>
 			</div>
 		</div>
@@ -42,7 +46,6 @@
         {% endblock content %}
 		<div class="middle5">
 			<h1 class="title-middle">
-				Frequently Asked Questions
 			</h1>
 		</div>
 		<a class="pro" href="">Try CodeLofi Pro with only 1$</a>
