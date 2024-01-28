@@ -56,13 +56,13 @@
 				</form>
 			</div>
 		</div>
-		<div class="its-font">
-				<span class="animation">
-					<h2 class="text-animation">
-						<span>CODE IN A RELAXED MANNER</span>
-					</h2>
-				</span>
-		</div>
+{#		<div class="its-font">#}
+{#				<span class="animation">#}
+{#					<h2 class="text-animation">#}
+{#						<span>CODE IN A RELAXED MANNER</span>#}
+{#					</h2>#}
+{#				</span>#}
+{#		</div>#}
 		<div class="middle1">
 			<h1 class="title-middle">
 				WEB DEVELOPER - DJANGO FRAMEWORK
@@ -95,7 +95,7 @@
 			</div>
 		</div>
 		<div class="middle2">
-			<h1 class="title-middle" style="color:#13072e">
+			<h1 class="title-middle-algo">
 				HIGHLIGHTED TUTORIAL - SETUP ALGORITHMIC PLATFORM
 			</h1>
             <h5 class="h5-tag02">An algorithmic platform will include the judge, and I will guide you on how to set up. By the way, just follow my documents to set up the site <p style="font-weight:bold">the judge.</p>. Please click to the button below to read instructions in README.md file </h5>
@@ -107,17 +107,38 @@
 					<div class="contain-a-puple"><a href="https://github.com/ThuNganPythonista/DMOJ/blob/main/README.md" style="color: #ffd400;">JUDGE-SIDE SETUP</a></div>
 				</div>
 			</div>
-            <iframe width="648" height="405" src="https://www.youtube.com/embed/LiknJ7h7JB8" title="SETUP THE JUDGE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-		</div>
+            <div class="video-dmoj">
+                <iframe width="648" height="405" src="https://www.youtube.com/embed/LiknJ7h7JB8" title="SETUP THE JUDGE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="next-dmoj-vid">
+                     <a href="" class="button-next-video">Next Video (Connect SSH And Deploy)</a>
+                     <i class="fa-solid fa-forward-fast" style="color: #152b61;"></i>
+                </div>
+            </div>
+
+        </div>
 		<div class="middle3">
 {#			<h1 class="title-middle">User System And Custom User Models In Django</h1>#}
-            <div class="">
-				<img src="{% static 'images/contain2.png' %}" class="robot">
-			</div>
-           <a href="https://drive.google.com/file/d/1jJmn4isvJiNWGw78BfBjDIDkt3lQOSi6/view?usp=sharing" class="html-download">
-           </a>
-           <a href="https://drive.google.com/file/d/1A2zcvLcAaVrRXi6uwoxUyEMS-5-8uUF0/view?usp=sharing" class="html-downloadbl">
-           </a>
+{#            <div class="">#}
+{#				<img src="{% static 'images/contain2.png' %}" class="robot">#}
+{#			</div>#}
+            <h1 class="title-middle">DOWNLOAD MY TUTORIAL</h1>
+            <div class="middle3-container">
+                    <div>
+                        <a href="https://drive.google.com/file/d/1jJmn4isvJiNWGw78BfBjDIDkt3lQOSi6/view?usp=sharing" class="html-download">
+                        <p>Custom User Model Django</p></a>
+                        <a href="https://drive.google.com/file/d/1A2zcvLcAaVrRXi6uwoxUyEMS-5-8uUF0/view?usp=sharing" class="html-download">
+                        <p>Simple Authentication Django</p></a>
+                        <a href="https://drive.google.com/file/d/1dD7t5Dy32M8YsCOi590S25vvYHGdPFH_/view?usp=sharing" class="html-download">
+                        <p>Override Template In <br></br>Django-Aullauth</p></a>
+                    </div>
+                 <div style="font-size: x-large;">
+                    <span>18 pages</span>
+                    <span>12 pages</span>
+                    <span>7 pages</span>
+                 </div>
+            </div>
+
+
             <div class="message-waiting">Waiting for my next tutorials in Django ...</div>
         </div>
 
@@ -141,7 +162,7 @@
                  <a href=""><img src="{% static 'images/figma2.png' %}"></a>
             </div>
             <div class="middle4-round4">
-                <a href="" class="describe"><p>Describe</p></a>
+                <a href="{% url 'describe-derma' %}" class="describe"><p>Describe</p></a>
                 <a href="" class="describe"><p>Describe</p></a>
             </div>
 		</div>
@@ -182,18 +203,5 @@
 				</div>
 			</div>
 		</footer>
-{#<script>#}
-{#function myFunction() {#}
-{#  alert("If you haven't purchased the CodeLofi Pro version, you need to ask for permission to download."#}
-{#  );}#}
-{#</script>#}
-{#<script>#}
-{#function myFunction() {#}
-{#  var result = confirm("If you haven't purchased the CodeLofi Pro version, you need to ask for permission to download.");#}
-{##}
-{#  if (result) {#}
-{#    window.location.href = "https://app.luminpdf.com/viewer/65aa14a87993d6dc3f918e32";#}
-{#  }#}
-{#</script>#}
 </body>
 </html>

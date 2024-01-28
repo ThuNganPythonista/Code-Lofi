@@ -11,6 +11,7 @@
 .scroll {
   position: relative;
   display: inline-block;
+  overflow-y:hidden;
 }
 .log button{
     height: 34px;
@@ -119,6 +120,7 @@
   display:flex;
 }
 .contain-input input{
+  border: 1px solid #ffd400;
   margin-right: 10px;
   height: 3em;
   width: 24em;
@@ -370,15 +372,8 @@
 }
 
 .animate-charcter
-{
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
+{text-transform: uppercase;
+  background-image: linear-gradient( -225deg, #63B8FF 0%, #4682B4 29%, #104E8B 67%, #0000CD 100% );
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -510,9 +505,8 @@
   position: relative;
   display: inline-block;
   font-size: 40px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
-  background-color: #13072E;  text-transform: uppercase;
-  color: white;
+  text-transform: uppercase;
+  color: #13072E;
   animation: flip 2s infinite;
   animation-delay: calc(.2s * var(--i))
 }
@@ -714,26 +708,8 @@
     width: 80%;
     margin-left: 10%;
 }
-.html-download {
-    z-index: 99;
-    margin-top: -24.5em;
-    width: 21em;
-    height: 7.5em;
-    margin-right: 29em;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-.html-downloadbl {
-    z-index: 99;
-    margin-top: 2em;
-    width: 21em;
-    height: 7.5em;
-    margin-right: 29em;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
+
+
 .dinosaur-img1{
     height: 35em;
     width: 65em;
@@ -811,7 +787,7 @@
     margin-left: 29%;
 }
 .message-waiting {
-    margin-top: 6em;
+    margin-top: 3em;
     font-size: xx-large;
 }
 .middle4 h2{
@@ -839,4 +815,105 @@
     display: flex;
     gap: 37%;
     margin-left: 30%;
+}
+.flex{
+    display:flex;
+}
+.title-middle-algo{
+    padding: 23px;
+}
+.next-dmoj-vid{
+    margin-top:23px;
+}
+.video-dmoj{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.signup-title{
+    padding: 9%;
+    text-align: center;
+}
+/*.middle-div3 a{*/
+/*    display: flex;*/
+/*    gap: 6em;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+.html-download{
+    border-radius: 39px;
+    font-size: x-large;
+    color: #13072e;
+    justify-content: center;
+    width: 15em;
+    height: 5em;
+    background-color: #ffd400;
+    display: flex;
+    align-items: center;
+}
+/*.middle-div3{*/
+/*    display:flex;*/
+/*}*/
+.middle3-container{
+    display: flex;
+    gap: 2em;
+}
+.middle3-container div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.middle3-container div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.wrap-sign-up{
+    justify-content: center;
+    align-items: center;
+    height: 23em;
+    background-color: #13072E;
+    color: #ffd400;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+}
+.below-wrap-sign-up{
+    display: flex;
+    flex-direction: column;
+}
+.below-wrap-sign-up{
+    margin-bottom: 1em;
+}
+.sign-up-a{
+    color: white;
+}
+.mt-8{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mt-8 input{
+    width: 22em;
+    padding: 1em;
+    border: none;
+    background-color: #ffd400;
+    border-radius: 10px;
+}
+.btn-sign-{
+    color: grey;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    padding: 1em;
+    margin-top: 2em;
+    width: 11em;
+
+}
+.contain-all-input{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 1em;
 }

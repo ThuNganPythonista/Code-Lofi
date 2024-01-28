@@ -20,5 +20,6 @@ urlpatterns = [
     path('news-ixs/', Post3.as_view(), name="news-ixs"),
     path('view-product/',view_something, name="view-something"),
     path('video-mysql-connect/', Video6.as_view(), name="video6-mysql"),
+    path('describe-dermatech/', DermaTech.as_view(), name="describe-derma"),
 
 ]

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}NEWS{% endblock title %}
+{% block content %}
+<body id="post-detail">
+<div class="contain-post">
+    <div class="flex">
+        <img src="{% static 'images/figma1.png' %}" class="weeb">
+        <img src="{% static 'images/derma.png' %}" class="weeb">
+    </div>
+    <div class="flex">
+        <img src="{% static 'images/derma1.png' %}" class="weeb">
+        <img src="{% static 'images/derma2.png' %}" class="weeb">
+    </div>
+        <h5>Description:</h5>
+    <p>DermaTech, a cutting-edge mobile application, employs artificial intelligence to diagnose diseases through a comprehensive analysis of users' biometric data, symptoms, and medical histories. This revolutionary app provides Pharmacists/Users with seamless access to their medical history by scanning a QR code within the app, capturing images of their skin condition, and completing a form to receive tailored AI recommendations.
+    </p>
+    <p>DermaTech's AI capabilities extend to suggesting potential diseases based on symptoms and monitoring overall health by leveraging vast datasets from reputable sources. This not only streamlines the workflow for pharmacists and doctors but also establishes DermaTech as a reliable medical guidance source for the public.
+    </p>
+    <p>In alignment with the adage 'prevention is better than cure,' DermaTech goes above and beyond by offering supplementary skincare services and continuous monitoring. Upon receiving user skin information, DermaTech evaluates skin condition, usage history of dermatological products, lifestyle behaviors, and the user's living environment. Subsequently, it delivers personalized skincare instructions and recommends suitable products. DermaTech takes on the role of a daily skincare companion, guiding users through their skincare journey. For instance, in the event of a UV intensity alert in the user's living area, DermaTech promptly updates the user with the latest news, issues notifications, and provides advice on caring for their skin in such weather conditions. Additionally, DermaTech serves as a valuable reminder for patients in the treatment phase, prompting them to adhere to their prescribed medication schedule and offering relevant specialist medical information.
+    </p>
+    <p>In essence, DermaTech emerges as a groundbreaking solution that seamlessly integrates AI technology, skincare services, and health monitoring to redefine the landscape of disease diagnosis and prevention.</p>
+</div>
+</body>
+
+
+
+{% endblock content %}

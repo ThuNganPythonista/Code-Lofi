@@ -55,6 +55,10 @@ class Post2(View):
 class Post3(View):
     def get(self, request):
         return render(request=request, template_name="post3.html")
+
+class DermaTech(View):
+    def get(self, request):
+        return render(request=request, template_name="describe-derma.html")
 class Video6(View):
     def get(self, request):
         return render(request=request, template_name="video-mysql.html")
